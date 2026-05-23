@@ -5,19 +5,25 @@
   "type": "module",
   "scripts": {
     "dev": "remotion studio src/index.ts",
-    "render": "remotion render src/index.ts AiCoursePromo out/ai-course-promo.mp4",
-    "still": "remotion still src/index.ts AiCoursePromo out/poster-frame.png --frame=1680",
+    "render": "npm run render:lab",
+    "render:course": "remotion render src/index.ts AiCoursePromo out/ai-course-promo.mp4",
+    "render:lab": "remotion render src/index.ts AiAnimationLab out/ai-animation-lab.mp4",
+    "still": "npm run still:lab",
+    "still:course": "remotion still src/index.ts AiCoursePromo out/poster-frame.png --frame=1680",
+    "still:lab": "remotion still src/index.ts AiAnimationLab out/ai-animation-lab-frame.png --frame=1680",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@remotion/cli": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "remotion": "latest"
+    "remotion": "latest",
+    "three": "^0.184.0"
   },
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/three": "^0.184.1",
     "typescript": "latest"
   }
 }

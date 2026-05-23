@@ -25,6 +25,9 @@
 
 - `VIDEO_PROMPT.md`：给 Remotion 制作宣传视频的主提示词、分镜、旁白和禁区。
 - `src/PromoVertical.tsx`：60 秒竖版宣传片主 composition。
+- `AI_ANIMATION_LAB_WORKFLOW.md`：AI 动画展示片制作工作流。
+- `AI_ANIMATION_LAB_PROMPT.md`：AI 动画展示片提示词、分镜和旁白。
+- `src/AiAnimationLab.tsx`：60 秒科技感 AI 动画能力展示 composition。
 - `.gitignore`：Node、Remotion、渲染输出和本地环境忽略规则。
 
 ## 本地运行
@@ -40,6 +43,7 @@ npm run render
 
 ```text
 out/ai-course-promo.mp4
+out/ai-animation-lab.mp4
 ```
 
 `out/` 已被 `.gitignore` 忽略，不会提交到 GitHub。
